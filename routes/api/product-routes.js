@@ -49,7 +49,10 @@ router.get("/:id", (req, res) => {
   })
     .then((dbProductData) => {
       if (!dbProductData) {
-        res.status(404).json({ message: "No product found with this id" });
+        res.status(404).json({
+          message:
+            "Sorry there was no product found with this id, please try again.",
+        });
         return;
       }
       res.json(dbProductData);
@@ -141,7 +144,10 @@ router.delete("/:id", (req, res) => {
   })
     .then((dbProductData) => {
       if (!dbProductData) {
-        rs.status(404).json({ message: "No product found with this id" });
+        res.status(404).json({
+          message:
+            "Sorry there was no product found with this id, please try again.",
+        });
         return;
       }
       res.json(dbProductData);
