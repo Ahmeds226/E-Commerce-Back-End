@@ -28,6 +28,26 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
 
-## Video
+## Instructions
+
+The application will be invoked by using the following commands:
+
+```bash
+
+mysql -u root -p (enter password when prompted)
+
+source sql/schema.sql
+
+quit
+
+npm run seed
+
+npm run start
+
+(Open Postman to check the api calls)
+
+```
+
+## Walkthrough Video
 
 <!-- Need to add video link to google drive. -->
