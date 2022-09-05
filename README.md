@@ -36,7 +36,7 @@ The application will be invoked by using the following commands:
 
 mysql -u root -p (enter password when prompted)
 
-source sql/schema.sql
+source db/schema.sql
 
 quit
 
